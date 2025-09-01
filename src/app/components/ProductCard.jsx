@@ -44,10 +44,7 @@ const ProductCard = ({
     const parts = name.split(/(afhentning)/i);
     return parts.map((part, index) =>
       part.toLowerCase() === "afhentning" ? (
-        <span
-          key={index}
-          className="bg-cutom-red text-white rounded py-1 px-1"
-        >
+        <span key={index} className="bg-cutom-red text-white rounded py-1 px-1">
           {part}
         </span>
       ) : (
@@ -70,7 +67,9 @@ const ProductCard = ({
       </figure>
       <div className="flex flex-col justify-between flex-grow ml-4">
         <div>
-          <h1 className="font-bold flex flex-row justify-between flex-wrap">{highlightAfhentning(name)}</h1>
+          <h1 className="font-bold flex flex-row justify-between flex-wrap">
+            {highlightAfhentning(name)}
+          </h1>
           <p>Varenr. {varenr}</p>
         </div>
         {!name.toLowerCase().includes("afhentning") && (

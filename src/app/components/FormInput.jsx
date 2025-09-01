@@ -1,6 +1,15 @@
 import React from "react";
 
-const FormInput = ({ label, id, name, type = "text", required = false, autoComplete, inputMode, pattern }) => (
+const FormInput = ({
+  label,
+  id,
+  name,
+  type = "text",
+  required = false,
+  autoComplete,
+  inputMode,
+  pattern,
+}) => (
   <div className="mb-4">
     <label htmlFor={id} className="block text-gray-700 text-sm font-bold mb-2">
       {label}

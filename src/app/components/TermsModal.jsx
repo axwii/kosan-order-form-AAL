@@ -152,7 +152,9 @@ export default function TermsModal({ isOpen, onClose }) {
           </li>
         </ul>
 
-        <h3 className="text-lg font-bold mt-4">8. Brugeradfærd på hjemmesiden</h3>
+        <h3 className="text-lg font-bold mt-4">
+          8. Brugeradfærd på hjemmesiden
+        </h3>
         <ul className="list-disc list-inside">
           <li>Misbrug af indhold eller funktioner er ikke tilladt.</li>
           <li>
@@ -170,7 +172,9 @@ export default function TermsModal({ isOpen, onClose }) {
           .
         </p>
 
-        <h3 className="text-lg font-bold mt-4">10. Ændringer af servicevilkår</h3>
+        <h3 className="text-lg font-bold mt-4">
+          10. Ændringer af servicevilkår
+        </h3>
         <p>
           Vi forbeholder os retten til at opdatere og ændre disse vilkår uden
           varsel.
