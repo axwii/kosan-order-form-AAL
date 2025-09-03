@@ -27,7 +27,7 @@ export default function TermsModal({ isOpen, onClose }) {
         </p>
         <ul className="list-disc list-inside">
           <li>
-            Webshoppen ejes og drives af Kosan Gascenter Aalborg (CVR-10027624).
+            Webshoppen ejes og drives af Kosan Gascenter Aalborg (CVR-44330695).
           </li>
           <li>
             Ved at placere en ordre accepterer du de vilkår og betingelser, der
