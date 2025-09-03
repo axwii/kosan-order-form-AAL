@@ -14,21 +14,20 @@ export default function TermsModal({ isOpen, onClose }) {
         </button>
         <h2 className="text-lg font-bold mb-4">Handelsbetingelser</h2>
         <p>
-          Velkommen til Kosan Gascenter København-Nordsjælland! Når du handler
-          hos os, accepterer du følgende vilkår og betingelser, der gælder for
-          brugen af vores hjemmeside og vores services. Vi anbefaler, at du
-          læser disse vilkår grundigt.
+          Velkommen til Kosan Gascenter Aalborg! Når du handler hos os,
+          accepterer du følgende vilkår og betingelser, der gælder for brugen af
+          vores hjemmeside og vores services. Vi anbefaler, at du læser disse
+          vilkår grundigt.
         </p>
 
         <h3 className="text-lg font-bold mt-4">1. Generelt</h3>
         <p>
           Disse servicevilkår gælder for alle køb og brug af Kosan Gascenter
-          København-Nordsjællands hjemmeside, produkter og ydelser.
+          Aalborgs hjemmeside, produkter og ydelser.
         </p>
         <ul className="list-disc list-inside">
           <li>
-            Webshoppen ejes og drives af Kosan Gascenter København-Nordsjælland
-            (CVR-10027624).
+            Webshoppen ejes og drives af Kosan Gascenter Aalborg (CVR-10027624).
           </li>
           <li>
             Ved at placere en ordre accepterer du de vilkår og betingelser, der
@@ -98,10 +97,10 @@ export default function TermsModal({ isOpen, onClose }) {
           <li>
             Kontakt os på{" "}
             <a
-              href="mailto:mail@kosan-albertslund.dk"
+              href="mailto:morten.nielsen@kosangas.dk"
               className="text-blue-500 underline"
             >
-              mail@kosan-albertslund.dk
+              morten.nielsen@kosangas.dk
             </a>{" "}
             eller +45 4362 3020 for returnering.
           </li>
@@ -128,10 +127,10 @@ export default function TermsModal({ isOpen, onClose }) {
           <li>
             Kontakt os på{" "}
             <a
-              href="mailto:mail@kosan-albertslund.dk"
+              href="mailto:morten.nielsen@kosangas.dk"
               className="text-blue-500 underline"
             >
-              mail@kosan-albertslund.dk
+              morten.nielsen@kosangas.dk
             </a>{" "}
             / +45 4362 3020.
           </li>
@@ -186,16 +185,16 @@ export default function TermsModal({ isOpen, onClose }) {
           <li>
             E-mail:{" "}
             <a
-              href="mailto:mail@kosan-albertslund.dk"
+              href="mailto:morten.nielsen@kosangas.dk"
               className="text-blue-500 underline"
             >
-              mail@kosan-albertslund.dk
+              morten.nielsen@kosangas.dk
             </a>
           </li>
           <li>Adresse: Djursvang 6A, 2620 Albertslund</li>
         </ul>
 
-        <p>Tak for at handle hos Kosan Gascenter København-Nordsjælland!</p>
+        <p>Tak for at handle hos Kosan Gascenter Aalborg!</p>
         <div className="mt-4 flex justify-end">
           <button
             onClick={onClose}

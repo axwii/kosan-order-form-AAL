@@ -86,7 +86,7 @@ export async function POST(req) {
 
     const mailOptions = {
       from: process.env.EMAIL_USER,
-      to: "bestilling@kosan-albertslund.dk",
+      to: "morten.nielsen@kosangas.dk",
       subject: `Ny gasbestilling fra ${companyName}`,
       ...emailContent,
     };
@@ -94,7 +94,7 @@ export async function POST(req) {
     const confirmationMailOptions = {
       from: process.env.EMAIL_USER,
       to: email,
-      subject: `Bekræftelse af din bestilling hos Kosan Gascenter København og Nordsjælland`,
+      subject: `Bekræftelse af din bestilling hos Kosan Gascenter Aalborg`,
       ...emailContent,
     };
 
