@@ -23,9 +23,10 @@ export async function POST(req) {
 
   try {
     const transporter = nodemailer.createTransport({
-      host: "send.one.com",
-      port: 465,
-      secure: true,
+      host: "smtp.simply.com",
+      port: 587,
+      secure: false,
+      requireTLS: true,
       auth: {
         user: process.env.EMAIL_USER,
         pass: process.env.EMAIL_PASS,
@@ -56,13 +57,18 @@ export async function POST(req) {
         By: ${city}
         Kommentarer: ${comments}
         Produkter:
-        ${Object.entries(products).filter(([key]) => !key.includes("Afhentning")).map(([key, value]) => `${key}: ${value}`).join("\n")}
+        ${Object.entries(products)
+          .filter(([key]) => !key.includes("Afhentning"))
+          .map(([key, value]) => `${key}: ${value}`)
+          .join("\n")}
       `,
       html: `
         <p>Firmanavn: <strong>${companyName}</strong></p>
         <p>Email: <strong>${email}</strong></p>
         <p>Kundenummer: <strong>${customerNumber}</strong></p>
-        <p>Reference nummer: <strong>${referenceNumber || "Ikke angivet"}</strong></p>
+        <p>Reference nummer: <strong>${
+          referenceNumber || "Ikke angivet"
+        }</strong></p>
         <p>Telefonnummer: <strong>${phoneNumber}</strong></p>
         <p>Kontakt person: <strong>${contactName || "Ikke angivet"}</strong></p>
         <p>Leveringsadresse: <strong>${address}</strong></p>
@@ -86,7 +92,7 @@ export async function POST(req) {
 
     const mailOptions = {
       from: process.env.EMAIL_USER,
-      to: "morten.nielsen@kosangas.dk",
+      to: "axel@wiingaard.net", // morten.nielsen@kosangas.dk
       subject: `Ny gasbestilling fra ${companyName}`,
       ...emailContent,
     };
