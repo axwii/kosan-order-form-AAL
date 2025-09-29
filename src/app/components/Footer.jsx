@@ -39,6 +39,7 @@ const Footer = () => {
             98149966
           </a>
         </p>
+        <p>CVR-nr: 44330695</p>
       </div>
       <div className="flex justify-center space-x-4 pb-10">
         {/* <a
