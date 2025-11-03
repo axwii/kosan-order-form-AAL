@@ -92,7 +92,7 @@ export async function POST(req) {
 
     const mailOptions = {
       from: process.env.EMAIL_USER,
-      to: "bestilling@kosan-aalborg.dk", // morten.nielsen@kosangas.dk
+      to: "gasbestillingaalborg@kosangascenter.dk", // morten.nielsen@kosangas.dk
       subject: `Ny gasbestilling fra ${companyName}`,
       ...emailContent,
     };
