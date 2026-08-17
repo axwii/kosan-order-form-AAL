@@ -114,7 +114,14 @@ export async function POST(req) {
   } catch (error) {
     console.error(error);
     return NextResponse.json(
-      { message: "Ups! Noget gik galt. Prøv igen eller kontakt os for hjælp." },
+      //{ message: "Ups! Noget gik galt. Prøv igen eller kontakt os for hjælp." },
+        {
+            message: "Email sending failed",
+            error: error.message,
+            code: error.code,
+            response: error.response,
+            responseCode: error.responseCode,
+        },
       { status: 500 }
     );
   }
