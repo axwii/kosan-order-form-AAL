@@ -41,12 +41,6 @@ const CustomerForm = () => {
         },
         body: JSON.stringify(data),
       });
-
-      //Following 3 lines
-        const result = await response.json();
-        console.log("EMAIL_USER:", result.emailUser);
-        console.log("EMAIL_PASS length:", result.passwordLength);
-
       if (response.ok) {
         alert("Order sent successfully!");
         event.target.reset();
