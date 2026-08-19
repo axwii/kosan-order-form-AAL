@@ -116,7 +116,7 @@ export async function POST(req) {
 
       return NextResponse.json({
           emailUser: process.env.EMAIL_USER,
-          passwordLength: process.env.EMAIL_PASS ? process.env.EMAIL_PASS.length : 0
+          passwordLength: process.env.EMAIL_PASS
       });
 
     return NextResponse.json(
