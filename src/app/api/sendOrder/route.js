@@ -113,12 +113,6 @@ export async function POST(req) {
     );
   } catch (error) {
     console.error(error);
-
-      return NextResponse.json({
-          emailUser: process.env.EMAIL_USER,
-          passwordLength: process.env.EMAIL_PASS
-      });
-
     return NextResponse.json(
       { message: "Ups! Noget gik galt. Prøv igen eller kontakt os for hjælp." },
       { status: 500 }
