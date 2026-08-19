@@ -113,15 +113,8 @@ export async function POST(req) {
     );
   } catch (error) {
     console.error(error);
-
-    const debugInfo = {
-        emailUser: process.env.EMAIL_USER,
-        passwordLength: process.env.EMAIL_PASS?.length ?? 0,
-    }
-
     return NextResponse.json(
-      { message: "Ups! Noget gik galt. Prøv igen eller kontakt os for hjælp.",
-      debugInfo: debugInfo},
+      { message: "Ups! Noget gik galt. Prøv igen eller kontakt os for hjælp." },
       { status: 500 }
     );
   }
