@@ -117,7 +117,7 @@ export async function POST(req) {
 
         //following 2 lines
         { emailUser: process.env.EMAIL_USER},
-        { passwordLength: process.env.EMAIL_PASS?.length ?? 0},
+        { passwordLength: process.env.EMAIL_PASS ? process.env.EMAIL_PASS.length : 0},
       { message: "Ups! Noget gik galt. Prøv igen eller kontakt os for hjælp." },
       { status: 500 }
     );
